@@ -120,3 +120,11 @@
 #contact {
     font-weight: bold;
 }
+
+#project {
+    font-weight: bold;
+}
+
+.projects {
+    margin-top: 15px;
+}
