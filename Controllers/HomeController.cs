@@ -15,5 +15,26 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        [Route("home/education")]
+        public IActionResult Education()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("home/project")]
+        public IActionResult projects()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("home/contact")]
+        public IActionResult Contact()
+        {
+            return View();
+        }
     }
 }

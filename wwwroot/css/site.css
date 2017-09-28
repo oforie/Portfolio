@@ -1,1 +1,40 @@
 /*Write all of your CSS here*/
+
+.wrapper {
+    max-width: 960px;
+    margin: auto;
+}
+
+.top{
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+#logos{
+    display: inline-block;
+}
+
+.icons {
+   margin-left: 80%;
+}
+
+.title {
+    margin: auto;
+    max-width: 20%;
+}
+
+#portrait{
+    border: 1px solid grey;
+    max-width: 145px;
+    max-height: 145px;
+    border-radius: 80px;
+}
+
+.summary {
+    display: inline-block;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
