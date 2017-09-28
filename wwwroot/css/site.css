@@ -1,5 +1,6 @@
 /*Write all of your CSS here*/
 
+
 .wrapper {
     max-width: 960px;
     margin: auto;
@@ -45,7 +46,7 @@
 .line {
     max-height: 2px;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-bottom: 1px solid #191970;
 }
 
@@ -55,16 +56,25 @@
     /* max-width: 20%; */
     height: 300px;
     text-align: center;
+    
 }
 
 .name {
     text-align: center;
 }
 .intro {
-    margin: 20px;
+    margin: 15px 15px 15px 30px;
 }
 .intro img {
-    margin: 25px;
+    margin: 15px;
+}
+
+.intro h5 {
+    font-style: oblique;
+    line-height: 140%;
+    letter-spacing: 120%;
+    
+    
 }
 
 #portrait{
@@ -79,8 +89,12 @@
 
     border: 1px solid #191970;
     border-radius: 10px;
-    margin: 10px;
+    margin: 15px;
     padding: 15px;
+}
+
+.content {
+    margin-top: 40px;
 }
 
  h4 {
@@ -98,7 +112,7 @@
 }
 
 #footer {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #191970;
     margin:20px;
 
 
