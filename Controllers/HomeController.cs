@@ -24,14 +24,14 @@ namespace Portfolio.Controllers
         }
 
         [HttpGet]
-        [Route("home/project")]
+        [Route("/project")]
         public IActionResult projects()
         {
             return View();
         }
 
         [HttpGet]
-        [Route("home/contact")]
+        [Route("/contact")]
         public IActionResult Contact()
         {
             return View();
