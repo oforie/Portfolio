@@ -1,20 +1,30 @@
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 <html>
-@Html.Partial("Mypartial")
+
 
 
     <head>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107338962-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107338962-1');
+        </script>
+
         <meta charset='utf-8'>
         <title>Index</title>
         <link rel="stylesheet" href="~/css/site.css"/>
         <img src="~/images/imagename.file/">
     </head>
-
-    <body>
+    <body class="body">
+       @Html.Partial("Mypartial")
         <div class="wrapper">
-
+            
             <div class="title">
                 <div class="intro">
                     <div class="name">
@@ -34,44 +44,48 @@
             <div class="content">
                 <div class="summary" id="about_me">
                     <h4>ABOUT ME</h4>
-                    <p>Welcome to my page. A bit about me: I'm a web and software developer and an aspring technical product manager with a public health and healthcare background. Prior to fully immersing into the tech arena, I plied my trade with Qliance Medical Group as the technical EMR software trainer.</p>
+                    <p>Welcome to my page. A bit about me: I am a web and software developer and an aspring technical product manager with a public health and healthcare background. Prior to fully immersing into the tech arena, I plied my trade with Qliance Medical Group as the technical EMR software trainer.</p>
 
-                    <p>Programming and tech are areas I find incredibly fascinating - mostly due to the new realities these areas make possible - from AI to public health advancement in our global community.</p>
+                    <p>I find programming and tech incredibly fascinating due to the new realities and avenues of thought they make possible - from agriculture to education, real-estate to space travel.</p>
 
                     <p>I fundamentally believe that programming models life and expands on it to avenues never before imagined. It's for these reasons that I've fully embraced the challenges of programming along with it's immense rewards.</p> 
 
-                    <p>My technical toolkit include:
+                    <p>My technical toolkit currently include:
                         <ul>
                             <li>C# & the .NetCore framework</li>
                             <li>JavaScript & the MEAN (MongodB, Express, Angular2 & Nodejs) framework</li>
                             <li>Python & the Django framework</li>
                             <li>Relational and Non-relational databases (MySQL, Postgressql)</li>
                             <li>AWS & Azure deployments</li>
+                            <li>Git & GitHub</li>
+                            <li>Adobe Creative Cloud: Photoshop</li>
                         </ul>
-                        I enjoy creating interactivity between systems through APIs and learning about new technology.
+                        I enjoy the opportunities for learning that is part and parcel of this industry. As I continue to add to my skill set and capacity through conferences, hackathons and self-education, I will update the list above.
                     </p>
 
                     <h4>EDUCATION</h4>
                     <ul>
                         <li id="schools">Web Developement:  Coding Dojo (Seattle, WA) - May 2017</li>
-                        <p>Coding Dojo is one of the highest-rated coding bootcamps in the industry, and the only coding bootcamp in the world to teach three full technology stacks in a single 14-week program. During my time here, I worked through the Python, MEAN and C# stacks completing numerous projects. See<a href="home/project">projects</a>for some of the projects I worked on at Coding Dojo.</P>
+                        <p>Coding Dojo is one of the highest-rated coding bootcamps in the industry, and the only coding bootcamp in the world to teach three full technology stacks in a single 14-week program. During my time here, I worked through the Python, MEAN and C# stacks completing numerous projects. 
+
                         <li id="schools"> BSc. Public Health: University of Washington (Seattle, WA) - June 2014</li>
                         <p>The University of Washington is a large, public flagship university in Seattle, Washington and has been consistently ranked amongst the top 15 universities in the world. At the UW, I completed an undergraduate degree. For my final thesis, I completed a research paper on The US Healthcare and Health Expenditure. </p>
                     </ul>
 
                     <h4>HOBBIES</h4>
-                    <p>I've always felt that I've done my fair share of outdoor adventures having grown up in Ghana. I do however enjoy the original football (Soccer in the US). On a typical Saturday, I'm either watching, playing, refereeing or coaching soccer. I typically play at Kasch Park (Everett) and Arena Sports(MillCreek) for Indoor tournaments. If you are ever out there for soccer and need an extra personnel on your team, reach out! </p>
+                    <p>I have always felt that I've done my fair share of outdoor adventures having grown up in Ghana. I do however enjoy the original football (Soccer in the US). On a typical Saturday, I'm either watching, playing, refereeing or coaching soccer. I typically play at Kasch Park (Everett) and Arena Sports(MillCreek) for Indoor tournaments. If you are ever out there for soccer and need an extra personnel on your team, reach out! </p>
 
                 </div>
                
                     
                 </div>
-     @Html.Partial("Footer")            
+               
             </div>
-        
-   
-    </body>
+         
     
+  
+    </body>
+      @Html.Partial("Footer")
         
        
 </html>

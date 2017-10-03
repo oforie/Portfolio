@@ -1,13 +1,35 @@
+
+<html>
 @Html.Partial("Mypartial")
+
+ <head>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107338962-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107338962-1');
+        </script>
+
+        <meta charset='utf-8'>
+        <title>Index</title>
+        <link rel="stylesheet" href="~/css/site.css"/>
+        <img src="~/images/imagename.file/">
+    </head>
+
 
 <h4>CONTACT</h4>
 
 <div class="contact">
     <h5> <span id="contact">Email: </span> ericofori206@gmail.com</h5>
     <h5><span id="contact">Phone: </span> 669-241-4662</h5>
-    <h5><span id="contact">Website: </span> <a href="www.ericofori.com">www.ericofori.com</a></h5>
+    <h5><span id="contact">Website: </span> <a href="http://ericofori.com">www.ericofori.com</a></h5>
     <h5><span id="contact">LinkedIn: </span> <a href="https://linkedIn.com/in/oforie">LinkedIn.com/in/oforie</a> </h5>
     <h5><span id="contact">Github: </span><a href="https://github.com/oforie">Github.com/oforie</a> </h5>
 </div>
 
 @Html.Partial("Footer")
+
+</html>

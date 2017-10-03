@@ -16,16 +16,11 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        [HttpGet]
-        [Route("home/education")]
-        public IActionResult Education()
-        {
-            return View();
-        }
+    
 
         [HttpGet]
-        [Route("/project")]
-        public IActionResult projects()
+        [Route("/projects")]
+        public IActionResult Projects()
         {
             return View();
         }
